@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <!-- إضافة Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل المتطوعات</title>
+</head>
+<body>
+    <div class="container">
+        <!-- قائمة البرغر -->
+        <div class="nav-container">
+            <nav>
+                <h3 class="logo">
+                    <div class="logo">
+                        <img src="IMG_1408.png" alt="Logo">
+                    </div>
+                </h3>
+                <button class="burger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="mobileMenu" class="menu">
+                    <li><a href="#qualities">الرئيسية <i class="fas fa-home"></i></a></li>
+                    <li><a href="#about-container">الشروط <i class="fas fa-file-alt"></i></a></li>
+                    <li><a href="#volunteer_opportunities">التسجيل <i class="fas fa-user-plus"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- صورة البطل والنص -->
+        <div class="hero">
+            <img src="IMG_1404.png" alt="Hero Image" class="hero-image">
+            <h1>التطوع حياة</h1>
+            <p>ولنا في التطوع حياة، متنفس، دعوة صادقة...<br> فالحمد لله سخّرنا بما خلق وكوننا نعمة فلا يعلم أو يشعر بها إلا من عمل لأجلها.</p>
+        </div>
+
+        <!-- القسم الرئيسي -->
+        <section id="qualities" class="qualities">
+            <h2>لماذا نتطوع؟</h2>
+            <div class="quality-container">
+                <div class="quality">
+                    <h3>تنمية المجتمع</h3>
+                    <p>يتيح التطوع للأفراد المساهمة في تحسين المجتمع.</p>
+                </div>
+                <div class="quality">
+                    <h3>تطوير المهارات</h3>
+                    <p>يساعد التطوع في اكتساب مهارات جديدة.</p>
+                </div>
+                <div class="quality">
+                    <h3>الشعور بالإنجاز</h3>
+                    <p>يشعر المتطوعون بالفخر بما يقدموه من جهود.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- شروط التسجيل -->
+        <section id="about-container" class="about-container">
+            <div class="about-us">
+                <div class="about-content">
+                    <h2>شروط التسجيل:</h2>
+                    <ul>
+                        <li>الالتزام بالمواعيد المحددة للتدريب أو الأنشطة.</li>
+                        <li>القدرة على العمل ضمن فريق والالتزام بالقواعد.</li>
+                        <li>التزام الأخلاقيات والسلوك الحسن.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- نموذج التسجيل -->
+        <section id="volunteer_opportunities">
+            <h2>التسجيل في مجالات العمل التطوعي</h2>
+            <form action="mailto:somayah449@gmail.com" method="POST" enctype="text/plain">
+                <label for="field">اختاري مجال العمل التطوعي:</label>
+                <select id="field" name="field" required>
+                    <option value="">--اختاري المجال--</option>
+                    <option value="المجال الاجتماعي">المجال الاجتماعي</option>
+                    <option value="المجال البيئي">المجال البيئي</option>
+                    <option value="المجال العلمي">المجال العلمي</option>
+                    <option value="المجال الديني">المجال الديني</option>
+                    <option value="المجال الصحي">المجال الصحي</option>
+                    <option value="المجال الثقافي">المجال الثقافي</option>
+                    <option value="المجال التعليمي">المجال التعليمي</option>
+                </select>
+
+                <label for="name">اسمك:</label>
+                <input type="text" id="name" name="name" placeholder="اكتبي اسمك" required>
+
+                <button type="submit">إرسال</button>
+            </form>
+        </section>
+
+        <!-- الفوتر -->
+        <footer>
+            <p>جميع الحقوق محفوظة © لـثانوية سمية 2025</p>
+        </footer>
+    </div>
+
+    <!-- استدعاء ملف JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

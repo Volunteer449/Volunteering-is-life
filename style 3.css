@@ -1,0 +1,469 @@
+@import url("http://www.fontstatic.com/f=jooza");
+@import url("http://www.fontstatic.com/f=jooza");
+@import url("http://www.fontstatic.com/f=cocon-next-arabic");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'jooza';
+    background:#E7ECEF; /* Updated background color from the palette */
+}
+
+h1{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color:#1E3D55; /* Updated color */
+}
+
+i{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color:#1E3D55; /* Updated color */
+}
+
+h4{
+    font-size: 2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color:#C1CCD1; /* Updated color */
+}
+
+p{
+    font-size: 1.6rem;
+    color: #6089A3; /* Updated color */
+    line-height: 2;
+}
+
+/* NAV SECTION */
+.nav-container{
+    background: #1E3D55; /* Updated background */
+    color: #F0F4F8; 
+}
+
+nav{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1366px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    font-size: 1.6rem;
+}
+
+nav .logo{
+    font-family: 'cocon-next-arabic';
+    font-weight: bold;
+    color: #F0F4F8; /* Updated color */
+    flex: 2;
+    margin-bottom: 0;
+}
+.logo img {
+    max-width: 80px; /* يمكنك التحكم بحجم اللوجو */
+    height: auto;
+}
+
+nav .logo span{
+    color: #F0F4F8;
+}
+
+nav ul{
+    display: flex;
+    list-style-type:none;
+    justify-content: space-between;
+    flex: 1;
+}
+
+nav ul li a{
+    display: block;
+    color: #F0F4F8;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #1E3D55; /* Updated hover color */
+}
+
+/* Hero Section */
+.hero{
+    height: 90vh;
+    position: relative;
+}
+
+.hero::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image:url('');
+    background-size: cover;
+    background-position: center;
+}
+
+.content{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1366px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 90vh;
+}
+
+h1 span{
+    color: #1E3D55; /* Updated color */
+}
+
+i span{
+    font-size: medium;
+    color: #1E3D55; /* Updated color */
+}
+
+/* Qualities Section */
+.qualities{
+    width: 90%;
+    margin: 4rem auto;
+    max-width: 1366px;
+    height: 1005;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.qualities h2{
+    font-size: 2.9rem;
+}
+
+.quality-container{
+    display: flex;
+    justify-content: space-between;
+    grid-gap:2rem;
+    padding-top: 5rem;
+}
+
+.quality{
+    background: #6089A3; /* Updated color */
+    padding: 4rem 0;
+    width: 30%;
+}
+
+.quality p{
+    text-align: center;
+    width: 70%;
+    margin: 1rem auto;
+    color:#131242;
+}
+
+.quality h3{
+    color: #000000;
+    font-size: 2.2rem;
+}
+
+/* About Us Section */
+.about-us{
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+    height: 22vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-content h2{
+    color: #000000;
+    font-size: 3rem;
+}
+
+.about-content p{
+    color: #6089A3; /* Updated color */
+    font-size: 1rem;
+    text-align: center;
+}
+
+.about-content li{
+    color: #6089A3; /* Updated color */
+}
+
+/* Contact Us Section */
+.contact{
+    width: 90%;
+    max-width: 1366px;
+    margin: 3rem auto;
+    height: 100%;
+    padding: 2rem;
+}
+
+.contact h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+label{
+    font-family: inherit;
+    font-size: 2rem;
+}
+
+input{
+    font-size: 1.8rem;
+}
+
+button{
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.50rem 1rem;
+    border-radius: 0.90rem;
+    border: none;
+    outline: none;
+    color: white;
+    background: #1E3D55; /* Updated background */
+}
+
+.btn:hover{
+    background: #2F344A;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+form .btn{
+    width: 100pt;
+    align-self: center;
+}
+
+input{
+    width: 30%;
+    border-radius: 0.9rem;
+    border: none;
+    outline: none;
+    padding: 0.75rem 3rem;
+    margin: 0 auto;
+}
+
+label, input, button{
+    margin-bottom: 1.5rem;
+}
+
+/* Footer Section */
+footer{
+    background: #1E3D55; /* Updated background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+footer p{
+    color: #F0F4F8;
+}
+
+/* Responsive design */
+@media screen and (max-width:1400px) { 
+    .hero, 
+    .content {
+        align-items: center; 
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1184px) {
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li a{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:984px) {
+    .quality-container{
+        flex-wrap: wrap;
+    }
+    .quality{
+        width: 100%;
+    }
+    .hero::after{
+        animation: none;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width:736px){
+    .about-content{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+form button{
+    width: 100pt;
+    align-self: center;
+}
+
+
+..hero {
+    height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5rem; /* يمكنك ضبط هذه القيمة لتحديد الارتفاع */
+}
+
+.hero img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 1rem; /* هذا لضبط المسافة بين الصورة والنص */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5"rem;
+    color: #3b415b;
+    width: 100%; /* تحديد عرض النص */
+    line-height: 2.5;
+}
+
+
+/* الشيفرة العامة للتصميم */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* القائمة الأساسية */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2b3e50;
+  padding: 1rem 2rem;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar li {
+  color: #fff;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* إخفاء قائمة البرغر على الشاشات الكبيرة */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+/* قائمة الجوال */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background-color: #2b3e50;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-nav a {
+  padding: 1rem;
+  border-bottom: 1px solid #fff;
+}
+
+/* نمط الجوال */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+ /* تطبيق الخط على جميع النصوص */
+body {
+    font-family: 'Tajawal', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* الخط العريض للعناوين */
+h1, h2, h3 {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    color: #222;
+}
+
+/* تخصيص قائمة التنقل */
+.menu li a {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+/* تخصيص الخطوط لعناصر أخرى */
+p, li {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+}
+
+input, select {
+    width: 30%; /* Ensure both have the same width */
+    padding: 0.75rem 3rem;
+    border-radius: 0.9rem;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    color: ##000000;
+}
